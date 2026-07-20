@@ -1,0 +1,18 @@
+/* Netflix-like navbar */
+.navbar{
+  background: linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+  padding: 12px 0;
+  position: sticky; top:0; z-index:60;
+}
+.nav-container{ max-width:1200px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:space-between }
+.logo-link{ display:flex; align-items:center; gap:10px; color:var(--text); text-decoration:none }
+.brand{ font-weight:800; color:var(--text); font-size:1.15rem }
+.nav-menu{ display:flex; gap:18px; list-style:none; margin:0; padding:0 }
+.nav-menu li{ color:var(--muted); font-weight:600; cursor:pointer }
+.nav-menu li:hover{ color:var(--text) }
+.nav-right{ display:flex; align-items:center; gap:12px }
+.search-bar{ display:flex; align-items:center; background:rgba(255,255,255,0.06); padding:6px; border-radius:4px }
+.search-bar input{ border:0; background:transparent; color:var(--text); outline:none; width:220px }
+.signin-btn{ background:var(--accent); color:#fff; padding:6px 12px; border-radius:20px; text-decoration:none }
+.logout-btn{ background:transparent; color:var(--text); border:1px solid rgba(255,255,255,0.08); padding:6px 12px; border-radius:20px }
+@media (max-width:720px){ .nav-menu{ display:none } .search-bar input{ width:120px } }

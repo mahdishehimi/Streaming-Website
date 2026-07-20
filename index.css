@@ -1,0 +1,68 @@
+:root {
+  --bg: #141414;
+  --surface: #181818;
+  --muted: #b3b3b3;
+  --accent: #e50914;
+  --text: #ffffff;
+  --card-shadow: rgba(0,0,0,0.6);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: red;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 4px;
+  border: 0;
+  padding: 0.5em 0.9em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: rgba(255,255,255,0.08);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+button:hover { background-color: rgba(255,255,255,0.12); }
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Utility */
+.container{ max-width:1200px; margin:0 auto; padding:0 20px }
+

@@ -1,0 +1,24 @@
+.page { max-width: 1400px; margin: 0 auto; padding: 40px 20px }
+
+
+
+.media-section h2 { font-size: 24px; margin: 12px 0 12px }
+
+.media-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.load-more{ background:transparent; border:1px solid rgba(255,255,255,0.08); color:var(--text); padding:8px 14px; border-radius:6px; margin-top:12px }
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+  }
+ 
+  .media-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}
